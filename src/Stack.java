@@ -46,7 +46,7 @@ public class Stack<T> {
         return size == 0;
     }
 
-    private void reCapacity(int _capacity){
+    public void reCapacity(int _capacity){
         T[] tempList = (T[]) new Object[_capacity];
         System.arraycopy(list,0,tempList,0,size);
         list = tempList;
